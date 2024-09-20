@@ -1,0 +1,642 @@
++ project=view_int
++ cp -r /projects/view_int transpiler/examples/prj_view_int
++ bazel build --sandbox_debug --verbose_failures //transpiler/examples/prj_view_int:view_int_rs_main
+Starting local Bazel server and connecting to it...
+[32mLoading:[0m 
+[1A[K[32mLoading:[0m 0 packages loaded
+[1A[K[32mLoading:[0m 0 packages loaded
+[1A[K[32mLoading:[0m 0 packages loaded
+    Fetching @llvm_toolchain; fetching
+[1A[K[1A[K[32mLoading:[0m 0 packages loaded
+    Fetching @llvm_toolchain; Restarting.
+[1A[K[1A[K[32mLoading:[0m 0 packages loaded
+[1A[K[32mLoading:[0m 0 packages loaded
+[1A[K[32mLoading:[0m 0 packages loaded
+    currently loading: transpiler/examples/prj_view_int
+[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (1 packa\
+ges loaded)
+[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (1 packa\
+ges loaded, 0 targets configured)
+[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (6 packa\
+ges loaded, 7 targets configured)
+    Fetching @local_config_sh; fetching
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (19 pack\
+ages loaded, 7 targets configured)
+    currently loading: @rules_foreign_cc//toolchains ... (25 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (74 pack\
+ages loaded, 160 targets configured)
+    currently loading: @bazel_tools//tools/sh
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (91 pack\
+ages loaded, 349 targets configured)
+    currently loading: @crate_index__rayon-1.7.0//
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (94 pack\
+ages loaded, 510 targets configured)
+    currently loading: @crate_index__rayon-1.7.0// ... (11 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (100 pac\
+kages loaded, 510 targets configured)
+    currently loading: @local_config_cc// ... (8 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (107 pac\
+kages loaded, 536 targets configured)
+    currently loading: @com_google_fully_homomorphic_encryption//
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (108 pac\
+kages loaded, 739 targets configured)
+    currently loading: @com_google_protobuf//
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (111 pac\
+kages loaded, 2890 targets configured)
+    currently loading: @com_google_protobuf// ... (3 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (118 pac\
+kages loaded, 4455 targets configured)
+    currently loading: @com_google_protobuf// ... (3 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (127 pac\
+kages loaded, 5712 targets configured)
+    currently loading: @crate_index__rayon-core-1.11.0// ... (8 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (144 pac\
+kages loaded, 6352 targets configured)
+    currently loading: @crate_index__either-1.8.1// ... (3 packages)
+    Fetching @llvm-project; fetching
+[1A[K[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (148 pac\
+kages loaded, 6391 targets configured)
+    currently loading: @crate_index__rand-0.8.5// ... (5 packages)
+    Fetching @llvm-project; fetching
+[1A[K[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (158 pac\
+kages loaded, 6782 targets configured)
+    currently loading: @bazel_tools//src/tools/launcher ... (2 packages)
+    Fetching @llvm-project; fetching
+[1A[K[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (170 pac\
+kages loaded, 7270 targets configured)
+    currently loading: @crate_index__crossbeam-utils-0.8.16// ... (6 packages)
+    Fetching @llvm-project; fetching
+[1A[K[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (188 pac\
+kages loaded, 7506 targets configured)
+    currently loading: @com_google_xls//xls/delay_model/models ... (6 packages\
+)
+[1A[K[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (190 pac\
+kages loaded, 8106 targets configured)
+    currently loading: @z3// ... (6 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (199 pac\
+kages loaded, 8351 targets configured)
+    currently loading: @com_google_ortools//ortools/linear_solver
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (200 pac\
+kages loaded, 8547 targets configured)
+    currently loading: @com_google_ortools//ortools/linear_solver ... (2 packa\
+ges)
+[1A[K[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (202 pac\
+kages loaded, 9808 targets configured)
+    currently loading: @llvm-project//clang ... (4 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (208 pac\
+kages loaded, 11641 targets configured)
+    currently loading: @llvm-project//clang ... (4 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (212 pac\
+kages loaded, 11723 targets configured)
+    currently loading: @crate_index__getrandom-0.2.15// ... (2 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (217 pac\
+kages loaded, 12060 targets configured)
+    currently loading: @crate_index__autocfg-1.1.0// ... (2 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (221 pac\
+kages loaded, 12408 targets configured)
+    currently loading: @llvm-project//llvm ... (2 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (224 pac\
+kages loaded, 12581 targets configured)
+    currently loading: @llvm-project//llvm
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (224 pac\
+kages loaded, 12876 targets configured)
+    currently loading: @llvm-project//llvm ... (2 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (226 pac\
+kages loaded, 13028 targets configured)
+    currently loading: @rules_python//python/runfiles ... (2 packages)
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (228 pac\
+kages loaded, 13079 targets configured)
+[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (228 pac\
+kages loaded, 17684 targets configured)
+    currently loading: @llvm_terminfo//
+[1A[K[1A[K[1A[K[32mAnalyzing:[0m target //transpiler/examples/prj_view_int:view_int_rs_main (230 pac\
+kages loaded, 20679 targets configured)
+[1A[K[1A[K[32mINFO: [0mAnalyzed target //transpiler/examples/prj_view_int:view_int_rs_main (230 packages loaded, 20735 targets configured).
+
+[1A[K[32mINFO: [0mFound 1 target...
+
+[1A[K[32m[1 / 64][0m [Prepa] //transpiler/examples/prj_view_int:view_int_rs_main
+[1A[K[32m[17 / 76][0m checking cached actions
+[1A[K[32m[5,173 / 5,182][0m [Prepa] Action .../prj_view_int/view_int_rs_fhe_lib.ir
+[1A[K[32mINFO: [0mFrom Action transpiler/examples/prj_view_int/view_int_rs_fhe_lib.ir:
+Parsing file 'transpiler/examples/prj_view_int/view_int.cc' with clang...
+Generating IR...
+[32m[5,173 / 5,182][0m ...view_int_rs_fhe_lib.cc_to_xls_ir; 0s processwrapper-sandbox
+[1A[K[32m[5,174 / 5,182][0m ...view_int_rs_fhe_lib.cc_to_xls_ir; 0s processwrapper-sandbox
+[1A[K[32m[5,177 / 5,182][0m ..._int:view_int_rs_fhe_lib.verilog; 0s processwrapper-sandbox
+[1A[K[31m[1mERROR: [0m/usr/src/fhe/transpiler/examples/prj_view_int/BUILD:7:17: Compiling Rust rlib view_int_rs_fhe_lib (1 files) failed: (Exit 1): process-wrapper failed: error executing command 
+  (cd /root/.cache/bazel/_bazel_root/595596dc4dacd40e54f4e8ca596c8a84/sandbox/processwrapper-sandbox/8/execroot/com_google_fully_homomorphic_encryption && \
+  exec env - \
+    BAZEL_CXXOPTS='-std=c++17' \
+    CARGO_CFG_TARGET_ARCH=x86_64 \
+    CARGO_CFG_TARGET_OS=linux \
+    CARGO_CRATE_NAME=view_int_rs_fhe_lib \
+    CARGO_MANIFEST_DIR='${pwd}/transpiler/examples/prj_view_int' \
+    CARGO_PKG_AUTHORS='' \
+    CARGO_PKG_DESCRIPTION='' \
+    CARGO_PKG_HOMEPAGE='' \
+    CARGO_PKG_NAME=view_int_rs_fhe_lib \
+    CARGO_PKG_VERSION=0.0.0 \
+    CARGO_PKG_VERSION_MAJOR=0 \
+    CARGO_PKG_VERSION_MINOR=0 \
+    CARGO_PKG_VERSION_PATCH=0 \
+    CARGO_PKG_VERSION_PRE='' \
+    PYTHON_BIN_PATH=/usr/bin/python3 \
+    SYSROOT=bazel-out/k8-opt/bin/external/rust_linux_x86_64__x86_64-unknown-linux-gnu__stable_tools/rust_toolchain \
+    TMPDIR=/tmp \
+  /root/.cache/bazel/_bazel_root/install/0a416bf0d912af171c75b5970fc86ced/process-wrapper '--timeout=0' '--kill_delay=15' bazel-out/k8-opt-exec-2B5CBBC6/bin/external/rules_rust/util/process_wrapper/process_wrapper --arg-file bazel-out/k8-opt/bin/external/crate_index__crossbeam-utils-0.8.16/crossbeam-utils_build_script.linksearchpaths --arg-file bazel-out/k8-opt/bin/external/crate_index__crossbeam-epoch-0.9.15/crossbeam-epoch_build_script.linksearchpaths --arg-file bazel-out/k8-opt/bin/external/crate_index__memoffset-0.9.0/memoffset_build_script.linksearchpaths --arg-file bazel-out/k8-opt/bin/external/crate_index__libc-0.2.155/libc_build_script.linksearchpaths --arg-file bazel-out/k8-opt/bin/external/crate_index__rayon-core-1.11.0/rayon-core_build_script.linksearchpaths --arg-file bazel-out/k8-opt/bin/external/crate_index__libm-0.2.8/libm_build_script.linksearchpaths --arg-file bazel-out/k8-opt/bin/external/crate_index__num-traits-0.2.19/num-traits_build_script.linksearchpaths --subst 'pwd=${pwd}' -- bazel-out/k8-opt/bin/external/rust_linux_x86_64__x86_64-unknown-linux-gnu__stable_tools/rust_toolchain/bin/rustc bazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs '--crate-name=view_int_rs_fhe_lib' '--crate-type=rlib' '--error-format=human' '--codegen=metadata=-399230049' '--codegen=extra-filename=-399230049' '--out-dir=bazel-out/k8-opt/bin/transpiler/examples/prj_view_int' '--codegen=opt-level=3' '--codegen=debuginfo=0' '--remap-path-prefix=${pwd}=' '--emit=dep-info,link' '--color=always' '--target=x86_64-unknown-linux-gnu' -L bazel-out/k8-opt/bin/external/rust_linux_x86_64__x86_64-unknown-linux-gnu__stable_tools/rust_toolchain/lib/rustlib/x86_64-unknown-linux-gnu/lib '--edition=2021' '--extern=rayon=bazel-out/k8-opt/bin/external/crate_index__rayon-1.7.0/librayon-317333224.rlib' '--extern=phantom_zone=bazel-out/k8-opt/bin/external/crate_index__phantom-zone-0.1.0/libphantom_zone-169194341.rlib' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__either-1.8.1' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__cfg-if-1.0.0' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__crossbeam-utils-0.8.16' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__crossbeam-channel-0.5.8' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__memoffset-0.9.0' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__scopeguard-1.1.0' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__crossbeam-epoch-0.9.15' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__crossbeam-deque-0.8.3' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__libc-0.2.155' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__num_cpus-1.16.0' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__rayon-core-1.11.0' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__rayon-1.7.0' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__itertools-0.12.1' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__libm-0.2.8' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__num-traits-0.2.19' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__ppv-lite86-0.2.17' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__getrandom-0.2.15' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__rand_core-0.6.4' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__rand_chacha-0.3.1' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__rand-0.8.5' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__rand_distr-0.4.3' '-Ldependency=bazel-out/k8-opt/bin/external/crate_index__phantom-zone-0.1.0')
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:100:26[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m100[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m                out[0] = state[0].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m                [0m[0m[1m[38;5;12m------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m                [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m                [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m100[0m[0m [0m[0m[1m[38;5;12m| [0m[0m                out[0] = [0m[0m[38;5;10mSome([0m[0mstate[0].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m                          [0m[0m[38;5;10m+++++[0m[0m                [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:101:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m101[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[10] = state[10].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m101[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[10] = [0m[0m[38;5;10mSome([0m[0mstate[10].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:102:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m102[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[11] = state[11].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m102[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[11] = [0m[0m[38;5;10mSome([0m[0mstate[11].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:103:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m103[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[12] = state[12].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m103[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[12] = [0m[0m[38;5;10mSome([0m[0mstate[12].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:104:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m104[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[13] = state[13].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m104[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[13] = [0m[0m[38;5;10mSome([0m[0mstate[13].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:105:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m105[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[14] = state[14].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m105[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[14] = [0m[0m[38;5;10mSome([0m[0mstate[14].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:106:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m106[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[15] = state[15].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m106[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[15] = [0m[0m[38;5;10mSome([0m[0mstate[15].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:107:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m107[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[16] = state[16].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m107[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[16] = [0m[0m[38;5;10mSome([0m[0mstate[16].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:108:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m108[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[17] = state[17].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m108[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[17] = [0m[0m[38;5;10mSome([0m[0mstate[17].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:109:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m109[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[18] = state[18].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m109[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[18] = [0m[0m[38;5;10mSome([0m[0mstate[18].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:110:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m110[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[19] = state[19].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m110[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[19] = [0m[0m[38;5;10mSome([0m[0mstate[19].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:111:14[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m111[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[1] = state[1].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m111[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[1] = [0m[0m[38;5;10mSome([0m[0mstate[1].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[38;5;10m+++++[0m[0m                [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:112:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m112[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[20] = state[20].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m112[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[20] = [0m[0m[38;5;10mSome([0m[0mstate[20].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:113:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m113[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[21] = state[21].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m113[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[21] = [0m[0m[38;5;10mSome([0m[0mstate[21].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:114:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m114[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[22] = state[22].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m114[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[22] = [0m[0m[38;5;10mSome([0m[0mstate[22].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:115:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m115[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[23] = state[23].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m115[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[23] = [0m[0m[38;5;10mSome([0m[0mstate[23].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:116:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m116[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[24] = state[24].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m116[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[24] = [0m[0m[38;5;10mSome([0m[0mstate[24].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:117:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m117[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[25] = state[25].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m117[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[25] = [0m[0m[38;5;10mSome([0m[0mstate[25].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:118:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m118[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[26] = state[26].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m118[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[26] = [0m[0m[38;5;10mSome([0m[0mstate[26].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:119:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m119[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[27] = state[27].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m119[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[27] = [0m[0m[38;5;10mSome([0m[0mstate[27].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:120:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m120[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[28] = state[28].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m120[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[28] = [0m[0m[38;5;10mSome([0m[0mstate[28].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:121:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m121[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[29] = state[29].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m121[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[29] = [0m[0m[38;5;10mSome([0m[0mstate[29].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:122:14[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m122[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[2] = state[2].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m122[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[2] = [0m[0m[38;5;10mSome([0m[0mstate[2].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[38;5;10m+++++[0m[0m                [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:123:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m123[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[30] = state[30].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m123[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[30] = [0m[0m[38;5;10mSome([0m[0mstate[30].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:124:15[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m124[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[31] = state[31].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m-------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m124[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[31] = [0m[0m[38;5;10mSome([0m[0mstate[31].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m               [0m[0m[38;5;10m+++++[0m[0m                 [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:125:14[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m125[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[3] = state[3].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m125[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[3] = [0m[0m[38;5;10mSome([0m[0mstate[3].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[38;5;10m+++++[0m[0m                [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:126:14[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m126[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[4] = state[4].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m126[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[4] = [0m[0m[38;5;10mSome([0m[0mstate[4].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[38;5;10m+++++[0m[0m                [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:127:14[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m127[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[5] = state[5].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m127[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[5] = [0m[0m[38;5;10mSome([0m[0mstate[5].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[38;5;10m+++++[0m[0m                [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:128:14[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m128[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[6] = state[6].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m128[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[6] = [0m[0m[38;5;10mSome([0m[0mstate[6].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[38;5;10m+++++[0m[0m                [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:129:14[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m129[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[7] = state[7].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m129[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[7] = [0m[0m[38;5;10mSome([0m[0mstate[7].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[38;5;10m+++++[0m[0m                [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:130:14[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m130[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[8] = state[8].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m130[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[8] = [0m[0m[38;5;10mSome([0m[0mstate[8].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[38;5;10m+++++[0m[0m                [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[E0308][0m[0m[1m: mismatched types[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0mbazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs:131:14[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m131[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    out[9] = state[9].clone();[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m------[0m[0m   [0m[0m[1m[38;5;9m^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9mexpected `Option<FheBool<Vec<u64>>>`, found `FheBool<Vec<u64>>`[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[38;5;12mexpected due to the type of this binding[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: expected enum `[0m[0m[1m[35mOption<[0m[0mphantom_zone::bool::impl_bool_frontend::FheBool<_>[0m[0m[1m[35m>[0m[0m`[0m
+[0m             found struct `phantom_zone::bool::impl_bool_frontend::FheBool<_>`[0m
+[0m[1m[38;5;14mhelp[0m[0m: try wrapping the expression in `Some`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m131[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    out[9] = [0m[0m[38;5;10mSome([0m[0mstate[9].clone()[0m[0m[38;5;10m)[0m[0m;[0m
+[0m    [0m[0m[1m[38;5;12m|[0m[0m              [0m[0m[38;5;10m+++++[0m[0m                [0m[0m[38;5;10m+[0m
+
+[0m[1m[38;5;9merror[0m[0m[1m: aborting due to 32 previous errors[0m
+
+[0m[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[32m[5,181 / 5,182][0m checking cached actions
+[1A[KTarget //transpiler/examples/prj_view_int:view_int_rs_main failed to build
+[32m[5,181 / 5,182][0m checking cached actions
+[1A[K[32mINFO: [0mElapsed time: 24.089s, Critical Path: 2.44s
+[32m[5,181 / 5,182][0m checking cached actions
+[1A[K[32mINFO: [0m11 processes: 4 internal, 7 processwrapper-sandbox.
+[32m[5,181 / 5,182][0m checking cached actions
+[1A[K[31m[1mFAILED:[0m Build did NOT complete successfully
+[1A[K[31m[1mFAILED:[0m Build did NOT complete successfully
+[0m+ true
++ mkdir -p /projects/view_int/out
++ cp bazel-out/k8-opt/bin/transpiler/examples/prj_view_int/view_int_rs_fhe_lib.rs /projects/view_int/out/
